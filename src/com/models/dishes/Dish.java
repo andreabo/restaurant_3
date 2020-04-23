@@ -1,6 +1,7 @@
 package com.models.dishes;
 
 import com.models.kitchen.Ingredient;
+
 import java.util.List;
 
 public abstract class Dish {
@@ -30,4 +31,12 @@ public abstract class Dish {
     }
 
     public abstract double calculatePrice();
+
+    @Override
+    public String toString() {
+        return "Dish{" +
+                "name='" + name + '\'' +
+                ", ingredientList=" + ingredientList.toString() +
+                '}';
+    }
 }

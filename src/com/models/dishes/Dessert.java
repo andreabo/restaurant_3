@@ -1,6 +1,7 @@
 package com.models.dishes;
 
 import com.models.kitchen.Ingredient;
+
 import java.util.List;
 
 public class Dessert extends Dish {
@@ -10,6 +11,10 @@ public class Dessert extends Dish {
 
     @Override
     public double calculatePrice() {
-        return 0;
+        double sumPrice = 0;
+        for (Ingredient ingredient : getIngredientList()) {
+            sumPrice = sumPrice + ingredient.getPrice();
+        }
+        return (sumPrice * 0.2) + sumPrice;
     }
 }

@@ -7,8 +7,10 @@ import static com.models.utils.Init.initIngredients;
 public class Kitchen {
 
     private List<Ingredient> ingredients;
+    private Menu menu;
 
     public Kitchen() {
+        this.menu = new Menu();
         this.ingredients = initIngredients();
     }
 
@@ -18,5 +20,13 @@ public class Kitchen {
 
     public void setIngredients(List<Ingredient> ingredients) {
         this.ingredients = ingredients;
+    }
+
+    public Menu getMenu() {
+        return menu;
+    }
+
+    public void setMenu(Menu menu) {
+        this.menu = menu;
     }
 }
