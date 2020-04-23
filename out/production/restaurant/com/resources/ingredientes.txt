@@ -1,0 +1,5 @@
+tomate,40,20
+cebolla,30,20
+lechuga,10,20
+carne,70,20
+pan,20,20
